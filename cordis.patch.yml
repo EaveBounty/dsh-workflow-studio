@@ -1,0 +1,5 @@
+# dsh-workflow-studio bundle patch.
+# Registers the host plugin and its web client in the selected DSH profile.
+- insert:
+    - id: workflow-studio
+      name: 'dsh-workflow-studio'
