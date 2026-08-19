@@ -67,3 +67,4 @@ dsh plugin --profile web add <path-to>/dsh-workflow-studio
 - 2026 规划：整合 M3 文件气泡、M4 Review 审核+去重+返工边、M5 GSAP 动效；修复函数序列化与 react-dom 注入。
 - 2026 规划：新增运行时可视化（红箭头流 + 节点呼吸灯）、节点气泡（常显/悬浮模式 + 任务结果摘要 + 悬浮详情）、整体回退机制（逐节点快照历史 + 依赖级联重置）。
 - 2026 规划：新增 `workflow.js` 单元测试（20 例，`npm test`）并接入 CI。
+- 2026 规划：新增插件设置页（气泡显示模式，经 `settings.section`）；Action 节点三模式选择器（普通/PTC/Loop）。
