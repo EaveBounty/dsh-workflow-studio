@@ -32,8 +32,8 @@ DSH Web 客户端 `conversation.view` 新增「工作流」标签（与 chat / t
 ## 安装
 
 ```sh
-# 从 npm 安装
-dsh plugin --profile web add dsh-workflow-studio
+# 从 npm 安装（scoped，公司组织 @eave_bounty）
+dsh plugin --profile web add @eave_bounty/dsh-workflow-studio
 
 # 从 GitHub 安装
 dsh plugin --profile web add EaveBounty/dsh-workflow-studio

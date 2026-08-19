@@ -1,5 +1,5 @@
 {
-  "name": "dsh-workflow-studio",
+  "name": "@eave_bounty/dsh-workflow-studio",
   "version": "0.1.0",
   "description": "DSH 会话界面的可编排工作流：Plan→Action→Review 三阶段可视化画布（@xyflow/react 基座），动态连线携带语义注入下游，多维度 Review 审核闭环，Apple 级动效。",
   "license": "MIT",
