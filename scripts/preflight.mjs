@@ -28,9 +28,12 @@ if (!/insert\s*:/s.test(patch)) fail("cordis.patch.yml has no insert block");
 pass("cordis.patch.yml parses (insert block)");
 
 const client = readFileSync(join(root, "lib", "client.js"), "utf8");
-if (!/window\.__ModuleLoader__\.load\(\s*\{\s*id\s*:\s*"dsh-workflow-studio"/s.test(client.slice(0, 400))) {
-	fail("lib/client.js does not start with window.__ModuleLoader__.load({ id: \"dsh-workflow-studio\" …");
+if (!/__ModuleLoader__\.load\(\s*\{\s*id\s*:\s*"@eave_bounty\/dsh-workflow-studio"/s.test(client)) {
+	fail("lib/client.js is missing the canonical __ModuleLoader__ registration id \"@eave_bounty/dsh-workflow-studio\"");
 }
-pass("client bundle __ModuleLoader__ registration");
+if (!/__ModuleLoader__\.load\(\s*\{\s*id\s*:\s*"dsh-workflow-studio"/s.test(client)) {
+	fail("lib/client.js is missing the legacy __ModuleLoader__ registration id \"dsh-workflow-studio\"");
+}
+pass("client bundle __ModuleLoader__ registrations (@eave_bounty/dsh-workflow-studio + legacy)");
 
 console.log("[preflight] PASS");
