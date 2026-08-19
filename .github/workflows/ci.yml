@@ -15,5 +15,6 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org/
       - run: node --check lib/index.js && node --check lib/workflow.js && node --check lib/client.js
+      - run: node tests/workflow.test.mjs
       - run: node scripts/preflight.mjs
       - run: npm pack --dry-run
