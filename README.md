@@ -64,3 +64,5 @@ dsh plugin --profile web add <path-to>/dsh-workflow-studio
 ## 变更日志
 
 - 2026 规划：仓库初始化；三份设计文档；host/workflow/client 基座（M0/M1/M2 雏形）。
+- 2026 规划：整合 M3 文件气泡、M4 Review 审核+去重+返工边、M5 GSAP 动效；修复函数序列化与 react-dom 注入。
+- 2026 规划：新增运行时可视化（红箭头流 + 节点呼吸灯）、节点气泡（常显/悬浮模式 + 任务结果摘要 + 悬浮详情）、整体回退机制（逐节点快照历史 + 依赖级联重置）。
